@@ -70,7 +70,7 @@ class App(tk.Tk):
             text_content = f"Champion: {champ}\n\n"
             columns = 7
             for shard in loot_vals:
-                text_content += f"Skin Shard: {shard['itemDesc']})\n"
+                text_content += f"Skin Shard: {shard['itemDesc']}\n"
                 text_content += f"Upgrade Cost: {shard['upgradeEssenceValue']}\n"
                 text_content += f"Skin Value: {shard['value']}\n"
                 text_content += f"\n"
