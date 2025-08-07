@@ -1,7 +1,6 @@
 # Loads the existing skins frim skinGetter.py
 # From the JSON files and does analysis on them
 import json, csv
-from pprint import pprint
 
 # Generic function to load JSON data
 def load_json(filename):
@@ -168,6 +167,6 @@ if __name__ == '__main__':
 
     # Now move the 'championName' key to the front of each dictionary
     dict_data = [{**{'championName': item.pop('championName')}, **item} for item in dict_data]
-    
+
     dict_to_csv(dict_data, 'skin_shards.csv')
     print("Analysis complete.")
